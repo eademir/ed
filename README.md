@@ -1,1 +1,1 @@
-# ed
+# kişisel web sitesi tasarımı
