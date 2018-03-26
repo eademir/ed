@@ -7,13 +7,13 @@ header nav ul li {display:inline-block;padding:10px;text-align:center;position:s
 header nav ul li a {font-size:20px;font-weight: bolder; color: #005555;font-family: 'Roboto Slab', serif;}
 header nav ul li a,header nav ul li  a:active,header nav ul li  a:hover,header nav ul li  a:focus{text-decoration: none;font-size:20px;font-weight: bolder; color: #005555}
 p{font-size:13px;}
+.banner{width:100;}
+.banner img{width:100%;}
 .index .show .banner{overflow: hidden;height:1000px;width:100%;}
 .index .show .banner .part1{width:100%;height:1000px;background: url(../images/part1.jpg) top fixed no-repeat; position: absolute;}
 .index .show .banner .part2{width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;}
 .index .container .row .col-sm-12 {padding:20px;margin-top:50px;}
 .index .container .row .in {background-color: #f1f1f1;height:500px; width:100%;display:block;margin:auto;}
-.blog .banner{width:100;}
-.blog .banner img{width:100%;}
 .blog .container .col-sm-12{padding:15px;}
 .blog .container .in {background-color: #f1f1f1;min-height:200px;}
 .blog .container .in .col-md-8{padding:20px;}
@@ -23,6 +23,14 @@ p{font-size:13px;}
 .blog .container .in p{color:#0f0f0f;font-size:15px;text-align:left;font-family: 'IBM Plex Serif', serif;}
 .blog .numara {text-align:right;width:100%;;display:block;}
 .blog .numara button{display:inline-block;margin:5px;padding:8px;font-size:17px;border-radius:20px;width:40px;height:40px;background-color:#070707;color:#fff;}
+.about-me .col-sm-12{padding:30px;}
+.about-me .col-sm-12 .in{min-height: 600px;}
+.about-me .col-sm-12 .in  p{font-family: 'IBM Plex Serif', serif;}
+.contact .col-sm-6{padding:20px;}
+.contact .col-sm-6 .in{background: #f1f1f1;}
+.contact .col-sm-6 form{display:block;padding:20px;}
+.contact .col-sm-6 label, .contact .col-sm-6 small{padding-left: 10px;}
+.contact .col-sm-6 form .btn-success{width:100% !important;}
 footer.top{min-height:220px;width:100%;background-color: #3c3c3c;display:block;padding:30px;text-align: center;}
 footer.top ul{list-style: none}
 footer.top a, footer.top a:hover, footer.top a:active, footer.top a:focus{color:#aaa;text-decoration: none;font-size:20px;}
