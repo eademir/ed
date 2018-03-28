@@ -13,7 +13,9 @@ p{font-size:13px;}
 .index .show .banner .part1{width:100%;height:1000px;background: url(../images/part1.jpg) top fixed no-repeat; position: absolute;}
 .index .show .banner .part2{width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;}
 .index .container .row .col-sm-12 {padding:20px;margin-top:50px;}
-.index .container .row .in {background-color: #f1f1f1;height:500px; width:100%;display:block;margin:auto;}
+.index .container .row .in {background-color: #f1f1f1;min-height:500px; width:100%;display:block;margin:auto;padding: 30px;}
+.index .container .row .in h2{font-family: 'Roboto Slab', serif; text-align:right;padding-top:20px;}
+.index .container .row .in h5{font-family: 'IBM Plex Serif', serif;}
 .blog .container .col-sm-12{padding:15px;}
 .blog .container .in {background-color: #f1f1f1;min-height:200px;}
 .blog .container .in .col-md-8{padding:20px;}
@@ -23,13 +25,24 @@ p{font-size:13px;}
 .blog .container .in p{color:#0f0f0f;font-size:15px;text-align:left;font-family: 'IBM Plex Serif', serif;}
 .blog .numara {text-align:right;width:100%;;display:block;}
 .blog .numara button{display:inline-block;margin:5px;padding:8px;font-size:17px;border-radius:20px;width:40px;height:40px;background-color:#070707;color:#fff;}
+.blog .container .col-sm-12 button{float:right;}
+.about-me .in img{width:100%;}
 .about-me .col-sm-12{padding:30px;}
-.about-me .col-sm-12 .in{min-height: 600px;}
-.about-me .col-sm-12 .in  p{font-family: 'IBM Plex Serif', serif;}
+.about-me .col-sm-12 .in  p{font-family: 'IBM Plex Serif', serif;font-weight: 600;font-size:17px;}
 .contact .col-sm-6{padding:20px;}
-.contact .col-sm-6 .in{background: #f1f1f1;}
+.contact .col-sm-6 .in{background: #f1f1f1;padding:30px;}
 .contact .col-sm-6 form{display:block;padding:20px;}
 .contact .col-sm-6 label, .contact .col-sm-6 small{padding-left: 10px;}
+.contact .col-sm-6 .in ul{list-style-type: none;margin:auto;display:relative;text-align:center;}
+.contact .col-sm-6 .in ul li{display:inline-block;margin:5px;}
+.contact .col-sm-6 .in i{border-radius: 8px;padding:5px;color:#000;font-size:30px;text-align:center; transition-duration: 1s;transition-property: background, color;}
+.contact .col-sm-6 .in i:hover{color:#fff;}
+.contact .col-sm-6 .in i.fa-facebook-f:hover{background: #3b5998;border-radius: 0 !important;}
+.contact .col-sm-6 .in i.fa-twitter:hover{background: #55acee;}
+.contact .col-sm-6 .in i.fa-instagram:hover{background: linear-gradient(45deg, #8a3ab9, #4c68d7, #cd486b, #fbad50, #fccc63);}
+.contact .col-sm-6 .in i.fa-linkedin:hover{background: #007bb5;}
+.contact .col-sm-6 .in i.fa-at:hover{background: #0072C6;}
+.contact .col-sm-6 .in i.fa-git:hover{background: #000;}
 .contact .col-sm-6 form .btn-success{width:100% !important;}
 footer.top{min-height:220px;width:100%;background-color: #3c3c3c;display:block;padding:30px;text-align: center;}
 footer.top ul{list-style: none}
@@ -37,3 +50,4 @@ footer.top a, footer.top a:hover, footer.top a:active, footer.top a:focus{color:
 footer.top h4{color:#f1f1f1;}
 footer.bottom{height:100px;padding:40px;width:100%;display:block;background-color: #2c2c2c;}
 footer.bottom p{color:#f1f1f1;font-weight:300;font-size:20px;text-align:center;}
+footer.line {width:100%;height:5px;background: #ff0c0c}
