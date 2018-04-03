@@ -9,6 +9,7 @@ header nav ul li a,header nav ul li  a:active,header nav ul li  a:hover,header n
 p{font-size:13px;}
 .banner{width:100;}
 .banner img{width:100%;}
+
 .index .show .banner{overflow: hidden;height:1000px;width:100%;}
 .index .show .banner .part1{width:100%;height:1000px;background: url(../images/part1.jpg) top fixed no-repeat; position: absolute;}
 .index .show .banner .part2{width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;}
@@ -16,6 +17,7 @@ p{font-size:13px;}
 .index .container .row .in {background-color: #f1f1f1;min-height:500px; width:100%;display:block;margin:auto;padding: 30px;}
 .index .container .row .in h2{font-family: 'Roboto Slab', serif; text-align:right;padding-top:20px;}
 .index .container .row .in h5{font-family: 'IBM Plex Serif', serif;}
+
 .blog .container .col-sm-12{padding:15px;}
 .blog .container .in {background-color: #f1f1f1;min-height:200px;}
 .blog .container .in .col-md-8{padding:20px;}
@@ -26,9 +28,16 @@ p{font-size:13px;}
 .blog .numara {text-align:right;width:100%;;display:block;}
 .blog .numara button{display:inline-block;margin:5px;padding:8px;font-size:17px;border-radius:20px;width:40px;height:40px;background-color:#070707;color:#fff;}
 .blog .container .col-sm-12 button{float:right;}
+.blog .container section span{display:inline-block;background: #fff;color:#ff0c0c;}
+.blog .container section{padding:30px;background:#f1f1f1;}
+.blog .container h1{font-family: 'Roboto Slab', serif;text-align:center;}
+.blog .container p{font-size:16px;font-family: 'IBM Plex Serif', serif;}
+.blog .container section img{max-width:100%;margin: 20px 0 20px 0;}
+
 .about-me .in img{width:100%;}
 .about-me .col-sm-12{padding:30px;}
 .about-me .col-sm-12 .in  p{font-family: 'IBM Plex Serif', serif;font-weight: 600;font-size:17px;}
+
 .contact .col-sm-6{padding:20px;}
 .contact .col-sm-6 .in{background: #f1f1f1;padding:30px;}
 .contact .col-sm-6 form{display:block;padding:20px;}
@@ -39,11 +48,12 @@ p{font-size:13px;}
 .contact .col-sm-6 .in i:hover{color:#fff;}
 .contact .col-sm-6 .in i.fa-facebook-f:hover{background: #3b5998;border-radius: 0 !important;}
 .contact .col-sm-6 .in i.fa-twitter:hover{background: #55acee;}
-.contact .col-sm-6 .in i.fa-instagram:hover{background: linear-gradient(45deg, #8a3ab9, #4c68d7, #cd486b, #fbad50, #fccc63);}
+.contact .col-sm-6 .in i.fa-instagram:hover{background: linear-gradient(45deg, #fccc63, #fbad50, #cd486b, #4c68d7, #8a3ab9);}
 .contact .col-sm-6 .in i.fa-linkedin:hover{background: #007bb5;}
 .contact .col-sm-6 .in i.fa-at:hover{background: #0072C6;}
 .contact .col-sm-6 .in i.fa-git:hover{background: #000;}
 .contact .col-sm-6 form .btn-success{width:100% !important;}
+
 footer.top{min-height:220px;width:100%;background-color: #3c3c3c;display:block;padding:30px;text-align: center;}
 footer.top ul{list-style: none}
 footer.top a, footer.top a:hover, footer.top a:active, footer.top a:focus{color:#aaa;text-decoration: none;font-size:20px;}
