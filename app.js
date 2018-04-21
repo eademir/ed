@@ -1,38 +1,40 @@
 //
 
-var http = require('http');
 var url = require('url');
 var fs = require('fs');
+var express = require('express');
+var app = express();
+var path = require('path');
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/blogs', express.static(path.join(__dirname, 'blogs')));
 
-var server = http.createServer(function (req, res) {
-
-    if (req.url == '/') {
-        fs.readFile('index.html', function (err, data) {
-            res.write(data);
-            res.end()
-        });
-    }
-    else if (req.url == '/blog') {
-        fs.readFile('blog.html', function (err, data) {
-            res.write(data);
-            res.end()
-        });
-    }
-    else if (req.url == '/contact') {
-        fs.readFile('contact.html', function (err, data) {
-            res.write(data);
-            res.end()
-        });
-    }
-    else if (req.url == '/about-me') {
-        fs.readFile('about-me.html', function (err, data) {
-            res.write(data);
-            res.end()
-        });
-    }
-
-    console.log(req.url);
+app.get('/', function(req, res){
+    fs.readFile('index.html', function (err, data) {
+        res.write(data);
+        res.end()
+    });
 });
 
+app.get('/about-me', function(req, res){
+    fs.readFile('about-me.html', function (err, data) {
+        res.write(data);
+        res.end()
+    });
+});
 
-server.listen(8000);
+app.get('/blog', function(req, res){
+    fs.readFile('blog.html', function (err, data) {
+        res.write(data);
+        res.end()
+    });
+});
+
+app.get('/contact', function(req, res){
+    fs.readFile('contact.html', function (err, data) {
+        res.write(data);
+        res.end()
+    });
+})
+
+
+app.listen(8000);
