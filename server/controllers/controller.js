@@ -1,15 +1,15 @@
 var path = require('path');
 
 module.exports.index = function (req, res) {
-    res.sendFile(path.join(__dirname, '../../index.html'))
+    res.render('index')
 }
 module.exports.blog = function (req, res) {
-    res.sendFile(path.join(__dirname, '../../blog.html'))
+    res.render('blog')
 }
 module.exports.contact = function (req, res) {
-    res.sendFile(path.join(__dirname, '../../contact.html'))
+    res.render('contact')
 }
 module.exports.aboutme = function (req, res) {
-    res.sendFile(path.join(__dirname, '../../about-me.html'))
+    res.render('about-me')
 }
 
