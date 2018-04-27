@@ -6,13 +6,13 @@ module.exports.send = function(req,res){
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "serbayacar@gmail.com",
-    pass: 'SB13haziran93'
+    user: "",
+    pass: ''
   }
 });
 
 var mailOptions = {
-  from: "serbayacar@gmail.com",
+  from: "",
   to: req.body.email + "("+ req.body.name +")",
   subject: 'İletisim Formu',
   text: req.body.message
