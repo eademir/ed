@@ -9,16 +9,16 @@
                     <form method="post" action="/contact">
                         <div class="form-group">
                             <label for="exampleInputEmail1">e-posta adresi</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="e-posta adresiniz">
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="e-posta adresiniz">
                             <small id="emailHelp" class="form-text text-muted">e-posta adresiniz hiçkimseyle paylaşılmayacaktır.</small>
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput">tam adınız</label>
-                            <input type="text" class="form-control" id="name" placeholder="tam adınız">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="tam adınız">
                         </div>
                         <div class="form-group">
                             <label for="exampleTextarea">iletmek istedikleriniz</label>
-                            <textarea class="form-control" id="text" rows="3"></textarea>
+                            <textarea class="form-control" name="message" id="text" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success" value="submit">Gönder</button>
                     </form>

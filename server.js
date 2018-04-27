@@ -5,6 +5,10 @@ var route = require('./server/routers/router');
 var ejsLayouts = require('express-ejs-layouts');
 var bodyParser = require('body-parser');
 
+// Add this line below
+app.use(bodyParser.urlencoded({ extended: false })) 
+
+// EJS
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, './server/views'));
 
