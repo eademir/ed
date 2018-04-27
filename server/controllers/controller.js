@@ -12,4 +12,12 @@ module.exports.contact = function (req, res) {
 module.exports.aboutme = function (req, res) {
     res.render('about-me')
 }
+module.exports.err = function (res, req) {
+    res.render('404')
+}
+//post
+module.exports.contactPost = function (req, res){
+ console.log(req.body)
+ res.render('contact')
+}
 

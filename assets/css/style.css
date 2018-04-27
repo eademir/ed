@@ -12,7 +12,7 @@ p{font-size:13px;}
 
 .index .show .banner{overflow: hidden;height:1000px;width:100%;display:block;}
 .index .show .banner .part1{width:100%;height:1000px;background: url(../images/part1.jpg) top fixed no-repeat; position: absolute;z-index:2}
-.index .show .banner .part2{width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;}
+.index .show .banner .part2{width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;margin:auto;}
 .index .container .row .col-sm-12 {padding:20px;margin-top:50px;}
 .index .container .row .in {background-color: #f1f1f1;min-height:500px; width:100%;display:block;margin:auto;padding: 30px;}
 .index .container .row .in h2{font-family: 'Roboto Slab', serif; text-align:right;padding-top:20px;}
@@ -62,3 +62,9 @@ footer.top h4{color:#f1f1f1;}
 footer.bottom{height:100px;padding:40px;width:100%;display:block;background-color: #2c2c2c;}
 footer.bottom p{color:#f1f1f1;font-weight:300;font-size:20px;text-align:center;}
 footer.line {width:100%;height:5px;background: #ff0c0c}
+.textMessage{font-family: 'IBM Plex Serif', serif;margin-top: 20vh;font-weight: lighter;padding: 20px;text-align:center;font-size: 20px;}
+.tryAgain{font-family: 'IBM Plex Serif', serif;margin-top: 10px;text-align:center;font-size: 20px;}
+.brokenHinge{display: inline-block;transform-origin: 0% 100%;color: #444;animation: brokenHinge 1.5s linear 1s forwards;}
+.heading{color: rgba(0,0,0,0.3);background-clip:text;-webkit-background-clip: text;font-size: 80px;font-weight: bolder;background-attachment: fixed;border-bottom: 20px inset #ccc;text-align:center;border-radius: 20px;}
+.heading::first-letter{color: #444;}
+@keyframes brokenHinge {0%{transform: rotate(0deg);}25%{transform: rotate(90deg);}40%{transform: rotate(180deg);}50%{transform: rotate(230deg);}60%{transform: rotate(180deg);}70%{transform: rotate(120deg);}80%{transform: rotate(180deg);}90%{transform: rotate(200deg);}100%{transform: rotate(170deg);}}
