@@ -8,6 +8,6 @@ router.get('/contact', controller.contact);
 router.get('/about-me', controller.aboutme);
 router.get('/404', controller.err);
 //post
-router.post('/contact', controller.contactPost);
+router.post('/contact', controller.sentEmail);
 
 module.exports = router;

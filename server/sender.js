@@ -1,29 +1,28 @@
 var nodemailer = require('nodemailer');
 
-
-var smtpTransport = nodemailer.createTransport('SMTP',{
-    host: "smtp.gmail.com",
-    secureConnection: true,
-    port: 465,
-    auth: {
-        user: 'eademir001@gmail.com',
-        pass: ''
-    }
+module.exports.send = function(req,res){
+    
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: '',
+    pass: ''
+  }
 });
 
 var mailOptions = {
-    from: '<%= email%>',
-    to: 'eademir1@hotmail.com',
-    subject: '<%= name%>' ,
-    text: '<%= text%>',
-}
+  from: '',
+  to: '',
+  subject: '',
+  text: ''
+};
 
-smtpTransport.sendMail(mailOptions, function(error, response){
-    if(error){
-        alert(error);
-    }else{
-        alert("Form gönderildi: " + response.message);
-    }
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
 });
 
-module.exports = sender;
+}

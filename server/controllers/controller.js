@@ -1,4 +1,5 @@
 var path = require('path');
+var sender = require('../sender');
 
 module.exports.index = function (req, res) {
     res.render('index')
@@ -19,5 +20,12 @@ module.exports.err = function (res, req) {
 module.exports.contactPost = function (req, res){
  console.log(req.body)
  res.render('contact')
+}
+
+module.exports.sentEmail = function (req, res){
+  var alanlar = req.body;
+  console.log(alanlar);
+  sender.send();
+  res.render('contact');
 }
 
