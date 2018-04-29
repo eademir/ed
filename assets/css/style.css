@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Roboto+Slab');
 *{padding:0;margin:0;}
 body{min-width:360px;max-width:1920px;margin:auto !important;}
-header{display:block;width:100%;background: #ffffff1f;position: fixed;z-index:99;}
+header{display:block;width:100%;background: #ffffff1f;position: fixed;z-index:99;margin:auto;max-width:1920px;}
 header nav ul {text-align:center;display:block;padding:20px;margin:auto;list-style: none;}
 header nav ul li {display:inline-block;padding:10px;text-align:center;position:sticky;}
 header nav ul li a {font-size:20px;font-weight: bolder; color: #005555;font-family: 'Roboto Slab', serif;}
@@ -11,8 +11,8 @@ p{font-size:13px;}
 .banner img{width:100%;}
 
 .index .show .banner{overflow: hidden;height:1000px;width:100%;display:block;}
-.index .show .banner .part1{width:100%;height:1000px;background: url(../images/part1.jpg) top fixed no-repeat; position: absolute;z-index:2}
-.index .show .banner .part2{width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;margin:auto;}
+.index .show .banner .part1{background-size:100% 100%;max-width:1920px;width:100%;height:1000px;background: url(../images/part1.jpg) top fixed no-repeat; position: absolute;z-index:2}
+.index .show .banner .part2{background-size:100% 100%;max-width:1920px;width:100%;height:1000px;background: url(../images/part2.png) bottom no-repeat;position: absolute;z-index: 9;display:block;}
 .index .container .row .col-sm-12 {padding:20px;margin-top:50px;}
 .index .container .row .in {background-color: #f1f1f1;min-height:500px; width:100%;display:block;margin:auto;padding: 30px;}
 .index .container .row .in h2{font-family: 'Roboto Slab', serif; text-align:right;padding-top:20px;}
@@ -40,7 +40,8 @@ p{font-size:13px;}
 .about-me .col-sm-12 .in  p{font-family: 'IBM Plex Serif', serif;font-weight: 600;font-size:17px;}
 
 .contact .col-sm-6{padding:20px;}
-.contact .col-sm-6 .in{background: #f1f1f1;padding:30px;}
+.contact .col-sm-6 .in{background: #f1f1f1;min-height:200px;}
+.contact .col-sm-6 .in p{padding:30px;font-size: 17px;}
 .contact .col-sm-6 form{display:block;padding:20px;}
 .contact .col-sm-6 label, .contact .col-sm-6 small{padding-left: 10px;}
 .contact .col-sm-6 .in ul{list-style-type: none;margin:auto;display:relative;text-align:center;}
