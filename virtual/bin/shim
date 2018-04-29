@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-export NODE_PATH=/home/kali/Projects/NodeJs/eray/virtual/lib/node_modules
-export NPM_CONFIG_PREFIX=/home/kali/Projects/NodeJs/eray/virtual
-export npm_config_prefix=/home/kali/Projects/NodeJs/eray/virtual
-exec virtual/bin/node "$@"
