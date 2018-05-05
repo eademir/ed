@@ -1,8 +1,10 @@
 @media screen and (min-width: 360px) and (max-width:480px){
-.index .show .banner .part1{background: url(../images/part1.jpg) top no-repeat !important;}
+.index .show .banner .part1{background: url(../images/part1.jpg) top no-repeat !important;height:700px !important;}
+.index .show .banner .part2{background: url(../images/part2.png) bottom no-repeat !important;height:700px !important;}
+.index .show .banner{height:700px !important;}
 header nav ul {text-align:center;margin:auto;}
 }
 @media screen and (max-width: 359px){
-.index .show .banner .part1{background: url(../images/part1.jpg) top relative no-repeat !important;}
+.index .show .banner .part1{background: url(../images/part1.jpg) top relative no-repeat !important;height:700px !important;}
 header nav .pos-f-t button span{color: #fbfbfb;font-size:25px;display:block !important;right: 10px;position: absolute;}
 }
