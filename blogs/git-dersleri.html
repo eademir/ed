@@ -1,145 +1,166 @@
-<!doctype html>
-<html lang="tr" class="blog">
+<!DOCTYPE html>
+<html lang="tr">
     <head>
         <title>eray dedi ki</title>
         <meta charset="utf-8">
-        <link href='../assets/css/style.css' rel='stylesheet' type='text/css'>
-        <link href='../assets/css/bootstrap.min.css' rel='stylesheet'>
+        <link rel='stylesheet' type='text/css' href='../assets/css/responsive.css' >
+        <link rel='stylesheet' type='text/css' href='../assets/css/style.css' >
+        <link rel='stylesheet' type='text/css' href='../assets/css/bootstrap.min.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <!--header başlangıç-->
         <header>
-            <nav>
-                <ul>
-                    <li><a href="/">anasayfa</a></li>
-                    <li><a href="/blog">blog</a></li>
-                    <li><a href="/about-me">hakkımda</a></li>
-                    <li><a href="/contact">iletişim</a></li>
-                </ul>
-            </nav>
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                        <a class="navbar-brand" href="/">ERAYDEDİKİ</a>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                  
+                        <div class="navbar-collapse collapse" id="navbar">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="/">anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/blog">blog</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/about-me">hakkımda</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/contact">iletişim</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
         </header>
-        <div class="banner">
-            <img src="../assets/images/banner.png">
-        </div>
-        <div class="container">
-            <section>
-                <h1>
-                    GİT NEDİR VE NASIL KULLANILIR
-                </h1>
-                <p>
-                    Git, dosyalarımızı github üzerinde kaydederek, dosyalarımın kaybolmasını engellemek,
-                    her yerden dosyalarıma erişebilmek, dosyalarımızı paylaşmak veya gizlemek gibi bir çok nedenle kullanılabilen birden fazla kişinin erişebileceği bir versiyon kontrol sistemidir.
-                </p>
-                <p>
-                    Git kullanabilmek için ilk ihtiyacımız olan github hesabıdır. Github hesabınızı <a href="https://github.com/" target="_blank">buradan</a> oluşturabilirsiniz.
-                </p>
-                <p>
-                    İkinci olarak ise eğer windows işletim sistemi kullanıyorsanız git clienti indirmektir. İki tür git clienti bulunur.
-                    <ul>
-                        <li><a href="https://tortoisegit.org/">tortoisegit</a></li>
-                        <li><a href="https://git-scm.com/">git-scm</a></li>
-                    </ul>
-                    Eğer Linux işletim sistemi kullanıyorsanız terminalden <span>sudo apt-get install git</span> yazmanız yeterlidir.
-                </p>
-                <p>
-                    Windows işletim sistemi kullanıyorsanız "Git Bash" isimli uygulamayı açmanız gerekmektedir. Linux işletim sistemi için terminalden git kodlarını yazmanız yeterli olacaktır.
-                </p>
-                    <img src="images/git1.png"></br>
-                    <small>"git version" yazarak gitinizin versiyonunu görüntüleyebilirsiniz.</small>
-                <p>
-                    Git client indirdikten sonra ilk yapacağımız şeylerden birisi de github hesabınızdan repository oluşturmaktır. Bunu yapmak da için de önce git hesabınızdan
-                    açmanız gerekmektedir.
-                </p>
-                <p>
-                    github hesabını giriş yaptıktan sonra üstteki "Repository" sekmesine tıkladıktan sonra sağdaki yeşil "New" düğmesine tıklamanız gerekmektedir.
-                </p>
-                <img src="images/git2.png"></br>
-                <p>
-                    Karşınıza gelen ekranda repo linkini belirlemelisiniz. Repo varsayılan olarak halka açık bir şekilde oluşmaktadır ama isterseniz gizli de oluşturabilirsiniz.
-                    (Gizli repo oluşturabilmek için aylık bir ücret ödemeniz gerekmektedir.)
-                </p>
-                <img src="images/git3.png"></br>
-                <p>
-                    Ben test isimli bir repository oluşturdum. Aşağıdaki yeşi "Creat Repository" düğmesine tıklayarak siz de repo oluşturabilirsiniz.
-                </p>
-                <p>Oluşturma işlemini gerçekleştirdikten sonra karşınıza çıkan sayfadaki git komutlarını kullanarak ilk commitinizi gönderebilirsiniz.</p>
-                <p>
-                    git kodlarını yazmadan önce yapmanız gereken ilk şey kodlarınız için bir dosya oluşturmaktır.
-                </p>
-                <p>
-                    Oluşturduğunuz dosya içerisinde işlem yapabilmek için git aracılığı ile o dosyaya ulaşmanız gerekmektedir.
-                    <span>cd /dosya/yolu</span> komutu ile git dosyanıza ulaşabilirsiniz. 
-                </p>
-                <img src="images/git5.png"></br>
-                <p>
-                    cd yazdıktan sonra "../" yazarak bir önceki klasöre dönebilirsiniz. Eğer 
-                    işlem yapmak istediğiniz klasöre gitmeden aşağıdaki işlemleri yaparsanız yanlış klasörünüzü veya tüm bilgisayarınızdaki 
-                    dosyalarınızı repoya eklemek gibi bir hata yapabilirsiniz.
-                </p>
-                <img src="images/git4.png"></br>
-                <p>
-                    <span>echo "# text" >> README.md</span> komutu doyanızda README.md isimli bir text dosyası oluşturarak içerisine "text" yazdıracak olan komuttur.
-                </p>
-                <p>
-                    <span>git init</span> dosyanızın içerisine yerel bir repo oluşturmanıza yarayacaktır. <span>git ls</span> yazarak oluşturulan dosyayı ve dosyanın içerisinde
-                    var olan dosyaları görüntüleyebilirsiniz. Başında nokta (.) olan dosyalar gizli dosyalardır. Git dosyası da 
-                    ".git" olarak görüntülenecektir.
-                </p>
-                <p>
-                    <span>git commit -m "first commit"</span> komutu projenin o anki durumunu lokal reponuza işler. 
-                </p>
-                <p>
-                    <span>git remote add origin https://....</span> komutu ise githubta oluşturduğunuz reponuzun linkini uzak bağlantı olarak kaydetmeniz için kullanılmaktadır.
-                </p>
-                <p>
-                    <span>git push -u origin master</span> komutu da lokal reponuzda ekli olan dosyaları github hesabınızdaki repoya göndermenizi sağlar.
-                    Repo oluşturulduktan sonra varsıyalan olarak "master" isimli bir branch oluşmaktadır. Kullanımınıza göre ekstra branch oluşturabilirsiniz 
-                    ya da tek branch üzerinden çalışmalarınıza devam edebilirsiniz. eğer farklı bir branche dosyalarınızı
-                    göndermek istiyorsanız komuttaki master yerine göndermek istediğiniz branchin adını yazabilirsiniz.(git push origin dev gibi...)
-                </p>
-                <h4>
-                    ŞİMDİ BİR DOSYA OLUŞTURUP EKLEMEK İÇİN AŞAĞIDAKİ ADIMLARI TAKİP EDELİM
-                </h4>
-                <P>
-                    Daha önceden oluşturduğumuz dosyanın içerisine bir tane html dosyası oluşturalım. İstediğiniz bir IDE aracılığı ile oluşturabilirsiniz ya da 
-                    git bash/terminal ekranına <span>vim ***.html</span> yazarak vim editörü aracılığı ile git bash/terminal ekranından kodlarınızı yazabilir "esc" tuşuna bastıktan sonra da 
-                    <span>:wq</span> yazıp "enter" tuşuna basarak dosyanızı kayıt edebilirsiniz.
-                </P>
-                <img src="images/git8.png"></br>
-                <img src="images/git7.png"></br>
-                <p>
-                    <span>ls</span> komutunu çalıştırarak klasörünüzdeki dosyaları görebilirsiniz.
-                </p>
-                <p>
-                    İlk dosyamızı oluşturduk sıra bunu github hesabımızdaki repomuza işlemekte...
-                     Yaptığımız değişikliği üç şekilde ekleyebiliriz. 
-                     Bunlardan birisi <span>git add <dosyaadı> <dosyaadı></span> şeklinde arada boşluk bırakarak eklemek istediğimiz dosyaları eklemek.
-                      İkincisi ise <span>git add *</span> yazarak bütün dosyaları eklemek.
-                      Üçüncüsü ise <span>git add .</span> komutunu girerek ekleme yapmak.(Bu yöntem klasördeki gizli ve açık bütün dosya ve klasörlerinizi eklemeye yarar.)
-                </p>
-                <img src="images/git9.png"></br>
-                <p>
-                    Bu işlemden sonra dosyalarınızı yerel deponuza eklediniz. Uzak deponuza eklemek içinse aşağıdaki işlem adımlarını takip etmeniz gerekmektedir.
-                </p>
-                <p>
-                    Daha öncesinde uzak sunucuyu yerel repomuza nasıl ayarlayacağımı göstermiştim. Eğer henüz ayar yapmadıysanız 
-                    <span>git remote add origin https://....</span> komutu ile ekleyebilirsiniz.
-                    Sonraki yapmanız gereken adım ise <span>git push origin master</span> yazarak yerel reponuzdaki dosyalarınızı sunucunuza göndermektir.
-                </p>
-                <img src="images/git10.png"> </br>
-                <p>
-                    Aşağıdaki görselden test.html dosyasının eklendiğini görebilirsiniz.
-                </p>
-                <img src="images/git11.png"></br>
-                <p>
-                    <span>git log</span> komutunu çalıştırarak da daha önce branch üzerinde yapılmış olan commitleri listeleyebilirsiniz.
-                    Liste yukarıdan aşağıya doğru en yeniden en eskiye şeklinde sıralanacaktır.
-                </p>
-                <img src="images/git12.png"></br>
-                <p>
-                    Branch oluşturmak, onlarla çalışabilmek ve diğer bazı işlemler için <a href="">ikinci git eğitimime</a> beklerim.
-                </p>
-            </section>
+        <!--header bitiş-->
+        <div class="blog">
+            <div class="banner">
+                <img src="../assets/images/banner.png">
+            </div>
+            <div class="container">
+                <section>
+                    <h1>
+                        GİT NEDİR VE NASIL KULLANILIR
+                    </h1>
+                    <p>
+                        Git, dosyalarımızı github üzerinde kaydederek, dosyalarımın kaybolmasını engellemek,
+                        her yerden dosyalarıma erişebilmek, dosyalarımızı paylaşmak veya gizlemek gibi bir çok nedenle kullanılabilen birden fazla kişinin erişebileceği bir versiyon kontrol sistemidir.
+                    </p>
+                    <p>
+                        Git kullanabilmek için ilk ihtiyacımız olan github hesabıdır. Github hesabınızı <a href="https://github.com/" target="_blank">buradan</a> oluşturabilirsiniz.
+                    </p>
+                    <p>
+                        İkinci olarak ise eğer windows işletim sistemi kullanıyorsanız git clienti indirmektir. İki tür git clienti bulunur.
+                        <ul>
+                            <li><a href="https://tortoisegit.org/">tortoisegit</a></li>
+                            <li><a href="https://git-scm.com/">git-scm</a></li>
+                        </ul>
+                        Eğer Linux işletim sistemi kullanıyorsanız terminalden <span>sudo apt-get install git</span> yazmanız yeterlidir.
+                    </p>
+                    <p>
+                        Windows işletim sistemi kullanıyorsanız "Git Bash" isimli uygulamayı açmanız gerekmektedir. Linux işletim sistemi için terminalden git kodlarını yazmanız yeterli olacaktır.
+                    </p>
+                        <img src="images/git1.png"></br>
+                        <small>"git version" yazarak gitinizin versiyonunu görüntüleyebilirsiniz.</small>
+                    <p>
+                        Git client indirdikten sonra ilk yapacağımız şeylerden birisi de github hesabınızdan repository oluşturmaktır. Bunu yapmak da için de önce git hesabınızdan
+                        açmanız gerekmektedir.
+                    </p>
+                    <p>
+                        github hesabını giriş yaptıktan sonra üstteki "Repository" sekmesine tıkladıktan sonra sağdaki yeşil "New" düğmesine tıklamanız gerekmektedir.
+                    </p>
+                    <img src="images/git2.png"></br>
+                    <p>
+                        Karşınıza gelen ekranda repo linkini belirlemelisiniz. Repo varsayılan olarak halka açık bir şekilde oluşmaktadır ama isterseniz gizli de oluşturabilirsiniz.
+                        (Gizli repo oluşturabilmek için aylık bir ücret ödemeniz gerekmektedir.)
+                    </p>
+                    <img src="images/git3.png"></br>
+                    <p>
+                        Ben test isimli bir repository oluşturdum. Aşağıdaki yeşi "Creat Repository" düğmesine tıklayarak siz de repo oluşturabilirsiniz.
+                    </p>
+                    <p>Oluşturma işlemini gerçekleştirdikten sonra karşınıza çıkan sayfadaki git komutlarını kullanarak ilk commitinizi gönderebilirsiniz.</p>
+                    <p>
+                        git kodlarını yazmadan önce yapmanız gereken ilk şey kodlarınız için bir dosya oluşturmaktır.
+                    </p>
+                    <p>
+                        Oluşturduğunuz dosya içerisinde işlem yapabilmek için git aracılığı ile o dosyaya ulaşmanız gerekmektedir.
+                        <span>cd /dosya/yolu</span> komutu ile git dosyanıza ulaşabilirsiniz. 
+                    </p>
+                    <img src="images/git5.png"></br>
+                    <p>
+                        cd yazdıktan sonra "../" yazarak bir önceki klasöre dönebilirsiniz. Eğer 
+                        işlem yapmak istediğiniz klasöre gitmeden aşağıdaki işlemleri yaparsanız yanlış klasörünüzü veya tüm bilgisayarınızdaki 
+                        dosyalarınızı repoya eklemek gibi bir hata yapabilirsiniz.
+                    </p>
+                    <img src="images/git4.png"></br>
+                    <p>
+                        <span>echo "# text" >> README.md</span> komutu doyanızda README.md isimli bir text dosyası oluşturarak içerisine "text" yazdıracak olan komuttur.
+                    </p>
+                    <p>
+                        <span>git init</span> dosyanızın içerisine yerel bir repo oluşturmanıza yarayacaktır. <span>git ls</span> yazarak oluşturulan dosyayı ve dosyanın içerisinde
+                        var olan dosyaları görüntüleyebilirsiniz. Başında nokta (.) olan dosyalar gizli dosyalardır. Git dosyası da 
+                        ".git" olarak görüntülenecektir.
+                    </p>
+                    <p>
+                        <span>git commit -m "first commit"</span> komutu projenin o anki durumunu lokal reponuza işler. 
+                    </p>
+                    <p>
+                        <span>git remote add origin https://....</span> komutu ise githubta oluşturduğunuz reponuzun linkini uzak bağlantı olarak kaydetmeniz için kullanılmaktadır.
+                    </p>
+                    <p>
+                        <span>git push -u origin master</span> komutu da lokal reponuzda ekli olan dosyaları github hesabınızdaki repoya göndermenizi sağlar.
+                        Repo oluşturulduktan sonra varsıyalan olarak "master" isimli bir branch oluşmaktadır. Kullanımınıza göre ekstra branch oluşturabilirsiniz 
+                        ya da tek branch üzerinden çalışmalarınıza devam edebilirsiniz. eğer farklı bir branche dosyalarınızı
+                        göndermek istiyorsanız komuttaki master yerine göndermek istediğiniz branchin adını yazabilirsiniz.(git push origin dev gibi...)
+                    </p>
+                    <h4>
+                        ŞİMDİ BİR DOSYA OLUŞTURUP EKLEMEK İÇİN AŞAĞIDAKİ ADIMLARI TAKİP EDELİM
+                    </h4>
+                    <P>
+                        Daha önceden oluşturduğumuz dosyanın içerisine bir tane html dosyası oluşturalım. İstediğiniz bir IDE aracılığı ile oluşturabilirsiniz ya da 
+                        git bash/terminal ekranına <span>vim ***.html</span> yazarak vim editörü aracılığı ile git bash/terminal ekranından kodlarınızı yazabilir "esc" tuşuna bastıktan sonra da 
+                        <span>:wq</span> yazıp "enter" tuşuna basarak dosyanızı kayıt edebilirsiniz.
+                    </P>
+                    <img src="images/git8.png"></br>
+                    <img src="images/git7.png"></br>
+                    <p>
+                        <span>ls</span> komutunu çalıştırarak klasörünüzdeki dosyaları görebilirsiniz.
+                    </p>
+                    <p>
+                        İlk dosyamızı oluşturduk sıra bunu github hesabımızdaki repomuza işlemekte...
+                            Yaptığımız değişikliği üç şekilde ekleyebiliriz. 
+                            Bunlardan birisi <span>git add <dosyaadı> <dosyaadı></span> şeklinde arada boşluk bırakarak eklemek istediğimiz dosyaları eklemek.
+                            İkincisi ise <span>git add *</span> yazarak bütün dosyaları eklemek.
+                            Üçüncüsü ise <span>git add .</span> komutunu girerek ekleme yapmak.(Bu yöntem klasördeki gizli ve açık bütün dosya ve klasörlerinizi eklemeye yarar.)
+                    </p>
+                    <img src="images/git9.png"></br>
+                    <p>
+                        Bu işlemden sonra dosyalarınızı yerel deponuza eklediniz. Uzak deponuza eklemek içinse aşağıdaki işlem adımlarını takip etmeniz gerekmektedir.
+                    </p>
+                    <p>
+                        Daha öncesinde uzak sunucuyu yerel repomuza nasıl ayarlayacağımı göstermiştim. Eğer henüz ayar yapmadıysanız 
+                        <span>git remote add origin https://....</span> komutu ile ekleyebilirsiniz.
+                        Sonraki yapmanız gereken adım ise <span>git push origin master</span> yazarak yerel reponuzdaki dosyalarınızı sunucunuza göndermektir.
+                    </p>
+                    <img src="images/git10.png"> </br>
+                    <p>
+                        Aşağıdaki görselden test.html dosyasının eklendiğini görebilirsiniz.
+                    </p>
+                    <img src="images/git11.png"></br>
+                    <p>
+                        <span>git log</span> komutunu çalıştırarak da daha önce branch üzerinde yapılmış olan commitleri listeleyebilirsiniz.
+                        Liste yukarıdan aşağıya doğru en yeniden en eskiye şeklinde sıralanacaktır.
+                    </p>
+                    <img src="images/git12.png"></br>
+                    <p>
+                        Branch oluşturmak, onlarla çalışabilmek ve diğer bazı işlemler için <a href="">ikinci git eğitimime</a> beklerim.
+                    </p>
+                </section>
+            </div>
         </div>
         <!--footer başlangıç-->
         <footer class="line"></footer>
@@ -150,9 +171,9 @@
                         <h4>menü</h4>
                         <ul>
                             <li><a href="/">anasayfa</a></li>
-                            <li><a href="/blog">blog</a></li>
-                            <li><a href="/about-me">hakkımda</a></li>
-                            <li><a href="/contact">iletişim</a></li>
+                            <li><a href="blog">blog</a></li>
+                            <li><a href="about-me">hakkımda</a></li>
+                            <li><a href="contact">iletişim</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
@@ -183,4 +204,7 @@
         </footer>
         <!--footer bitiş-->
     </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 </html>
