@@ -10,6 +10,7 @@ header nav ul li  a:active,header nav ul li  a:hover,header nav ul li  a:focus{t
 p{font-size:13px;}
 .show{min-height:184px;}
 .show ul, .collapsing ul{position:relative;}
+.navbar-brand img{width:30px;margin: 0 10px 0 0;}
 
 .banner{width:100%;}
 .banner img{width:100%;}
