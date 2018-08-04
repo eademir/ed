@@ -1,9 +1,9 @@
-var nodemailer = require('nodemailer');
-var bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 module.exports.send = function(req, res){
 
-var transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: '###',
@@ -11,7 +11,7 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-var mailOptions = {
+const mailOptions = {
     from: '###',
     to: '###',
     subject: req.body.name + "<"+req.body.email+ ">",
