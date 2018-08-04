@@ -1,9 +1,9 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-var route = require('./server/routers/router');
-var ejsLayouts = require('express-ejs-layouts');
-var bodyParser = require('body-parser');
+const express = require('express');
+const app = express();
+const path = require('path');
+const route = require('./server/routers/router');
+const ejsLayouts = require('express-ejs-layouts');
+const bodyParser = require('body-parser');
 
 // Add this line below
 app.use(bodyParser.urlencoded({ extended: false })) 
