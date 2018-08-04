@@ -1,6 +1,6 @@
-var path = require('path');
-var sender = require('../sender');
-var bodyParser = require('body-parser');
+const path = require('path');
+const sender = require('../sender');
+const bodyParser = require('body-parser');
 
 module.exports.index = function (req, res) {
     res.render('index')
@@ -24,7 +24,7 @@ module.exports.contactPost = function (req, res){
 }
 
 module.exports.sentEmail = function (req, res){
-  var alanlar = req.body;
+  let alanlar = req.body;
   console.log(alanlar);
   sender.send(req,res);
   res.render('contact');
